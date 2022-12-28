@@ -1,0 +1,193 @@
+<link rel="stylesheet" href="/css/style_web.css"> 
+
+    <header>
+
+        <div class="logo">
+            <a href="./index.html"><img src="/images/deitres-logo-transp.png" alt=""></a>
+            
+        </div>
+
+        <div class="navbar">
+            <a class=" btn  btn-outline-primary" href="#Quienes">Quienes somos</a>
+
+            <a class=" btn  btn-outline-primary" href="#Productos">Nuestros productos</a>
+
+            <a class=" btn  btn-outline-primary" href="#Contacto">Contactanos</a>
+
+
+            <button class=" btn  btn-outline-primary" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <video src="/images/fondo_main.mp4" autoplay="true" muted="true" loop="true" ></video>
+
+        <section id="Carousel" class="sect">
+            
+            <div id="carouselEmpresa" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/images/Evolution.jpeg" class="d-block w-100" alt="Evolution_mesh">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="/images/somosDeitres.png" class="d-block w-100" alt="Somos Deitres">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="/images/soldado.jpeg" class="d-block w-100" alt="...">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="/images/osciloscope.jpeg" class="d-block w-100" alt="...">
+                  </div>
+
+
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselEmpresa" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselEmpresa" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+              
+            </div>
+
+        </section>
+
+        <section id="Quienes" class="sect">
+            <h1>Acerca de nosotros</h1>
+<h2>            
+Somos una empresa que crea soluciones innovadoras de IoT y Tecnología Mesh, desarrollando el hardware, firmware y software de nuestros productos. 
+</h2>
+
+<h3>
+Buscamos trascender trabajando en proyectos de alto impacto que mejoren nuestra sociedad.
+La calidad e innovación de nuestros desarrollos es fruto de la pasión y dedicación que ponemos en cada producto, trabajando en un entorno y una cultura que logra promover todo nuestro potencial. 
+</h3>
+        </section>
+
+        <section id="Productos" class="sect">
+            
+             <div id="carouselProductos" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                  <div class="carousel-item active">
+                    <img src="/images/Amiar City7.jpg" class="d-block w-100" alt="city7_y_Amiar"">
+
+                    <div class="carousel-caption d-none d-md-block" id="Comantario_carrusel">
+                      <h5>Amiar y City Mesh 7</h5>
+                      <p> El city 7 permite comunicar paneles a alarmas a nuestra red mesh. Amiar es un nuevo producto que utiliza una red mesh para leer en tiempo real el consumo eléctrico. </p>
+                    </div>
+
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="/images/Amiar.webp" class="d-block w-100" alt="Somos Deitres">
+                    <div class="carousel-caption d-none d-md-block" id="Comantario_carrusel">
+                      <h5>Amiar</h5>
+                      <p> Medidor eléctrico monofásico categoría 1 bidireccional. Primer medidor Mesh creado en Argentina y único en Latinoamérica</p>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="/images/city.png" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block" id="Comantario_carrusel">
+                      <h5>Citypanel</h5>
+                      <p> Panel / comunicador  inalámbrio con tecnología Mesh, 3G, WiFi y Ethernet. </p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Proximo</span>
+                  </button>
+              
+            </div>
+
+
+
+
+
+
+        </section>
+
+    </main>
+
+<footer id="Contacto">
+ <div>
+    <form method='POST' action="/">
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" name='nombre' id="nombre" placeholder="nombre...">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" name='email' id="email" placeholder="email...">
+        </div>
+        <div class="form-group">
+            <label for="exampleTextarea">Mensaje</label>
+            <textarea class="form-control" name='mensaje' id="mensaje" rows="3"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+
+</form >
+</div>
+<div>
+    <h2>DEITRES <br>
+        San Luis 4580<br>
+        B7602 Mar del Plata,<br>
+        Buenos Aires, Argentina<br>
+        <br>
+        US: +1 (86) 697 80747<br>
+        AR: +54 (223)495 2500<br>
+        E: hi@deitres.com<br></h2>
+</div>
+</footer >
+
+<div id="id01" class="modal">
+  
+    <form class="modal-content animate" action="/login" method="post">
+
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="/images/img_avatar2.png" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="empresa"><b>Empresa</b></label>
+        <input type="text" placeholder="Ingrese Empresa" name="empresa" required>
+        
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Ingrese Email" name="email" required>
+  
+        <label for="password"><b>Contraseña</b></label>
+        <input type="password" placeholder="Ingrese Contraseña" name="password" required>
+          
+        <button type="submit">Login</button>
+
+    </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+
+        <span class="psw" >  <a href="#">Olvide mi contraseña?</a></span>
+      </div>
+    </form>
+  </div>
+
+<script src="/js/paginaWeb.js"></script>

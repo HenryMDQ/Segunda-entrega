@@ -1,0 +1,48 @@
+<h1>Lista de usuarios</h1>
+<br>
+<a class="btn btn-primary" href="/nuevoUsuario" role="AgregarUser">Agregar nuevo usuario</a>
+<br>
+<br>
+<table id="mytable" class="table table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Empresa</th>
+      <th scope="col">Nickname</th>
+      <th scope="col">Email</th>
+      <th scope="col">Perfil</th>
+      <th scope="col">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each Usuarios}}
+    <tr>
+      <th scope="row">{{@index}}</th>
+      <td>{{empresa}}</td>
+      <td>{{nickname}}</td>
+      <td>{{email}} </td>
+      <td>{{perfil}}</td>
+      <td>
+                    <form action="/eliminarUsuario/{{_id}}?_method=delete" method="post">
+                    <input type="hidden" name="_method" value="delete">
+                    <button type="submit" class="btn btn-danger btn-sm btn-block">
+                        Eliminar
+                    </button>
+                    </form>
+
+                    <form action="/formularioEditarUsuario/{{_id}}" method="post">
+                    <button type="submit" class="btn btn-success btn-sm btn-block">
+                        Editar
+                    </button>
+                    </form>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+</div>
+
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,74 @@
+<div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark"> <!-- navbar -->
+
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <!-- Menu de usuario -->
+                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+
+                        <div class="dropdown pb-4"> <!--   Menu de usuario con Imagen -->
+
+                            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                <img src="./images/User1.jpg" alt="hugenerd" width="30" height="30" class="rounded-circle">  <!-- imagen login -->
+    
+                                <span class="d-none d-sm-inline mx-1">{{menu.nickname}}</span>
+                            </a>
+    
+                            <!-- Menú se usuario expandido -->
+                            <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                                <li>
+                                    <a class="dropdown-item" href="#">Información</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Configuraciones</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/logout">Salir</a>
+                                </li>
+                            </ul>
+    
+                        </div>
+
+                    </a>
+
+                    <!-- Menu de navegación -->
+<ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+<ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+
+{{#if menu.Inicio}}
+    <li class="nav-item"><a class="nav-link align-middle px-0" href="/inicio"><i class="fs-4 bi-house"></i><span class="ms-1 d-none d-sm-inline">Inicio</span></a></li>
+{{/if}}
+{{#if menu.Dashboard}}
+	<li class="nav-item"><a class="nav-link align-middle px-0" href="/Dashboard"><i class="fs-4 bi-speedometer2"></i><span class="ms-1 d-none d-sm-inline">Dashboard</span></a></li>
+{{/if}}
+{{#if menu.Productos}}
+	<li class="nav-item"><a class="nav-link align-middle px-0 collapsed" href="#Productos" data-bs-toggle="collapse" aria-expanded="false"><i class="fs-4 bi-bag-plus"></i><span class="ms-1 d-none d-sm-inline">Productos</span></a>
+	<ul class="collapse nav flex-column ms-1" id="Productos" data-bs-parent="#menu">
+	<li class="w-100"><a class="nav-link px-0" href="/ventas">- <span>Comprar</span></a></li>
+	<li class="w-100"><a class="nav-link px-0" href="/Ordenes">- <span>Ordenes</span></a></li>
+	<li class="w-100"><a class="nav-link px-0" href="/ventaHistorial">- <span>Historial</span></a></li>
+	<li class="w-100"><a class="nav-link px-0" href="/AdminProd">- <span>Admin. Productos</span></a></li>
+	</ul>
+	</li>
+{{/if}}
+{{#if menu.Dispositivos}}
+	<li class="nav-item"><a class="nav-link align-middle px-0" href="#Dispositivos" data-bs-toggle="collapse" aria-expanded="true"><i class="fs-4 bi-activity"></i><span class="ms-1 d-none d-sm-inline">Dispositivos</span></a>
+	<ul class="nav flex-column ms-1 collapse show" id="Dispositivos" data-bs-parent="#menu" style="">
+	<li class="w-100"><a class="nav-link px-0" href="/network">- <span>Mapa</span></a></li>
+	<li class="w-100"><a class="nav-link px-0" href="/Devices">- <span>Equipo</span></a></li>
+	</ul>
+	</li>
+{{/if}}
+{{#if menu.Usuarios}} 
+	<li class="nav-item"><a class="nav-link align-middle px-0 collapsed" href="#Usuarios" data-bs-toggle="collapse" aria-expanded="false"><i class="fs-4 bi-gear-fill"></i><span class="ms-1 d-none d-sm-inline">Usuarios</span></a>
+	<ul class="nav flex-column ms-1 collapse" id="Usuarios" data-bs-parent="#menu" style="">
+	<li class="w-100"><a class="nav-link px-0" href="/lista">- <span>Usuarios</span></a></li>
+	</ul>
+	</li>
+{{/if}} 
+</ul>
+        </ul>                    
+    </div>
+</div>
